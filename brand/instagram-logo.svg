@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8c98a"/>
+      <stop offset="100%" stop-color="#c9a35f"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="50%" cy="42%" r="75%">
+      <stop offset="0%" stop-color="#111116"/>
+      <stop offset="100%" stop-color="#08080a"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+  </defs>
+
+  <rect width="1080" height="1080" fill="url(#bg)"/>
+
+  <!-- ambient orb, echoes hero background -->
+  <circle cx="800" cy="230" r="260" fill="url(#gold)" opacity="0.16" filter="url(#glow)"/>
+  <circle cx="230" cy="900" r="220" fill="#6b5aa8" opacity="0.10" filter="url(#glow)"/>
+
+  <!-- faint grid, echoes hero__grid -->
+  <g opacity="0.05" stroke="#ffffff" stroke-width="2">
+    <line x1="0" y1="270" x2="1080" y2="270"/>
+    <line x1="0" y1="540" x2="1080" y2="540"/>
+    <line x1="0" y1="810" x2="1080" y2="810"/>
+    <line x1="270" y1="0" x2="270" y2="1080"/>
+    <line x1="540" y1="0" x2="540" y2="1080"/>
+    <line x1="810" y1="0" x2="810" y2="1080"/>
+  </g>
+
+  <!-- monogram -->
+  <text x="497" y="640" text-anchor="middle"
+        font-family="'Unbounded', 'Arial Black', sans-serif" font-weight="700"
+        font-size="440" letter-spacing="-10" fill="url(#gold)">KB</text>
+
+  <!-- accent dot, echoes .logo__dot -->
+  <circle cx="795" cy="640" r="26" fill="url(#gold)"/>
+
+  <!-- baseline rule -->
+  <rect x="340" y="712" width="400" height="6" rx="3" fill="url(#gold)" opacity="0.55"/>
+</svg>

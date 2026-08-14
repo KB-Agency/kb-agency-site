@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KB Agency — агентство цифровой упаковки</title>
+<meta name="description" content="Создаём сайты, воронки, контент и системы продаж, которые вызывают доверие и приносят клиентов.">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kbagency.ru/">
+<meta property="og:title" content="KB Agency — агентство цифровой упаковки">
+<meta property="og:description" content="Создаём сайты, воронки, контент и системы продаж, которые вызывают доверие и приносят клиентов.">
+<meta property="og:image" content="https://kbagency.ru/brand/instagram-logo-1080.png">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1080">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KB Agency — агентство цифровой упаковки">
+<meta name="twitter:description" content="Создаём сайты, воронки, контент и системы продаж, которые вызывают доверие и приносят клиентов.">
+<meta name="twitter:image" content="https://kbagency.ru/brand/instagram-logo-1080.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" href="brand/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="intro" id="introOverlay" aria-hidden="true">
+  <div class="intro__mark">
+    <span class="intro__text">KB<span class="intro__dot"></span></span>
+    <span class="intro__caret" id="introCaret"></span>
+  </div>
+</div>
+
+<div class="noise-overlay"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#top" class="logo">KB<span class="logo__dot">.</span>Agency</a>
+
+    <nav class="nav" id="nav">
+      <a href="#advantages" class="nav__link">Преимущества</a>
+      <a href="services.html" class="nav__link">Услуги</a>
+      <a href="#process" class="nav__link">Этапы</a>
+      <a href="cases.html" class="nav__link">Кейсы</a>
+      <div class="nav__contact">
+        <a href="tel:+79224811172">+7 922 481-11-72</a>
+        <a href="mailto:kb_digital_agency@mail.ru">kb_digital_agency@mail.ru</a>
+        <a href="https://t.me/KB_AGENCY" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://www.instagram.com/kb_digital_agency" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </nav>
+
+    <a href="#contact" class="btn btn--small btn--ghost header__cta">Обсудить проект</a>
+
+    <button class="burger" id="burger" aria-label="Открыть меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__grid"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <span class="eyebrow" data-reveal>Агентство цифровой упаковки</span>
+      <h1 class="hero__title" data-reveal>
+        Упаковываем <span class="text-gradient">проекты</span>,<br>
+        которые <span class="text-gradient">продают</span>.
+      </h1>
+      <p class="hero__desc" data-reveal>
+        Создаём сайты, воронки, контент и системы продаж,
+        которые вызывают доверие и приносят клиентов.
+      </p>
+      <div class="hero__actions" data-reveal>
+        <a href="#contact" class="btn btn--primary">Обсудить проект</a>
+        <a href="#services" class="btn btn--outline">Смотреть услуги</a>
+      </div>
+    </div>
+
+    <div class="stats container" data-reveal>
+      <div class="stats__grid">
+        <div class="stat">
+          <span class="stat__value" data-count="30" data-suffix="+">0</span>
+          <span class="stat__label">упакованных проектов</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value" data-count="15" data-suffix=" млн+">0</span>
+          <span class="stat__label">выручки клиентов после упаковки</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value stat__value--text">AI</span>
+          <span class="stat__label">современные технологии</span>
+        </div>
+        <div class="stat">
+          <span class="stat__value" data-count="14" data-suffix=" дн.">0</span>
+          <span class="stat__label">средний запуск проекта</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVANTAGES -->
+  <section class="section" id="advantages">
+    <div class="container">
+      <span class="section__eyebrow" data-reveal>Преимущества</span>
+      <h2 class="section__title" data-reveal>Почему выбирают <span class="text-gradient">KB Agency</span></h2>
+      <p class="section__lead" data-reveal>
+        Мы объединяем креатив, технологии и стратегию, чтобы ваш бизнес не просто
+        выглядел хорошо, а уверенно рос и приносил результат.
+      </p>
+
+      <div class="grid grid--4">
+        <article class="card" data-reveal>
+          <div class="card__icon">✦</div>
+          <h3 class="card__title">Индивидуальный подход</h3>
+          <p class="card__text">Каждое решение разрабатывается с учётом уникальных потребностей клиента.</p>
+        </article>
+        <article class="card" data-reveal>
+          <div class="card__icon">⌁</div>
+          <h3 class="card__title">Современные технологии</h3>
+          <p class="card__text">Используем актуальные инструменты и методы для достижения лучших результатов.</p>
+        </article>
+        <article class="card" data-reveal>
+          <div class="card__icon">⚡</div>
+          <h3 class="card__title">Быстрый запуск</h3>
+          <p class="card__text">Наши проекты стартуют оперативно, минимизируя время ожидания.</p>
+        </article>
+        <article class="card" data-reveal>
+          <div class="card__icon">◈</div>
+          <h3 class="card__title">Поддержка проекта</h3>
+          <p class="card__text">Не просто запускаем проект, но и обеспечиваем его долгосрочную поддержку.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section--alt" id="services">
+    <div class="container">
+      <span class="section__eyebrow" data-reveal>Услуги</span>
+      <h2 class="section__title" data-reveal>Что получает бизнес <span class="text-gradient">после упаковки</span></h2>
+      <p class="section__lead" data-reveal>
+        Мы создаём не отдельные элементы, а единую систему, которая помогает
+        привлекать клиентов и усиливать доверие к бренду.
+      </p>
+
+      <div class="grid grid--3">
+        <a href="services.html#packaging" class="service" data-reveal>
+          <span class="service__num">01</span>
+          <h3 class="service__title">Упаковка бизнеса</h3>
+          <p class="service__text">Анализ и позиционирование</p>
+          <span class="service__price">от 44 700 ₽</span>
+        </a>
+        <a href="services.html#sites" class="service service--accent" data-reveal>
+          <span class="service__num">02</span>
+          <h3 class="service__title">Разработка сайтов</h3>
+          <p class="service__text">Создание лендингов и корпоративных сайтов</p>
+          <span class="service__price">от 24 700 ₽</span>
+        </a>
+        <a href="services.html#telegram" class="service" data-reveal>
+          <span class="service__num">03</span>
+          <h3 class="service__title">Telegram решения</h3>
+          <p class="service__text">Разработка Telegram Mini Apps и ботов</p>
+          <span class="service__price">от 14 900 ₽</span>
+        </a>
+        <a href="services.html#ai" class="service" data-reveal>
+          <span class="service__num">04</span>
+          <h3 class="service__title">AI-креативы</h3>
+          <p class="service__text">Генерация изображений и контента для соцсетей</p>
+          <span class="service__price">от 49 700 ₽</span>
+        </a>
+        <a href="services.html#branding" class="service" data-reveal>
+          <span class="service__num">05</span>
+          <h3 class="service__title">Брендинг</h3>
+          <p class="service__text">Создание логотипов и фирменного стиля</p>
+          <span class="service__price">от 19 700 ₽</span>
+        </a>
+        <a href="services.html#automation" class="service" data-reveal>
+          <span class="service__num">06</span>
+          <h3 class="service__title">Автоматизация бизнеса</h3>
+          <p class="service__text">Интеграция CRM и автоматизация бизнес-процессов</p>
+          <span class="service__price">от 19 700 ₽</span>
+        </a>
+      </div>
+
+      <div class="section__more" data-reveal>
+        <a href="services.html" class="btn btn--outline">Все услуги и цены</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" id="process">
+    <div class="container">
+      <span class="section__eyebrow" data-reveal>Этапы работы</span>
+      <h2 class="section__title" data-reveal>Как проходит <span class="text-gradient">упаковка</span> вашего проекта</h2>
+      <p class="section__lead" data-reveal>
+        От знакомства до первых заявок — прозрачный процесс на каждом шаге.
+      </p>
+
+      <div class="timeline">
+        <div class="timeline__line" aria-hidden="true"></div>
+
+        <div class="timeline__item" data-reveal>
+          <span class="timeline__num">01</span>
+          <div class="timeline__content">
+            <h3>Знакомство</h3>
+            <p>Первый контакт с клиентом, обсуждение целей и задач проекта.</p>
+          </div>
+        </div>
+        <div class="timeline__item" data-reveal>
+          <span class="timeline__num">02</span>
+          <div class="timeline__content">
+            <h3>Анализ бизнеса</h3>
+            <p>Исследование рынка, конкурентов, определение целевой аудитории и стратегии продвижения.</p>
+          </div>
+        </div>
+        <div class="timeline__item" data-reveal>
+          <span class="timeline__num">03</span>
+          <div class="timeline__content">
+            <h3>Разработка концепции</h3>
+            <p>Создание общей идеи проекта, формулирование основных принципов и подходов.</p>
+          </div>
+        </div>
+        <div class="timeline__item" data-reveal>
+          <span class="timeline__num">04</span>
+          <div class="timeline__content">
+            <h3>Упаковка проекта</h3>
+            <p>Разрабатываем визуальный стиль, сайт и материалы для продвижения.</p>
+          </div>
+        </div>
+        <div class="timeline__item" data-reveal>
+          <span class="timeline__num">05</span>
+          <div class="timeline__content">
+            <h3>Запуск и привлечение клиентов</h3>
+            <p>Настраиваем инструменты для получения первых заявок.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASES TEASER -->
+  <section class="section section--alt" id="cases">
+    <div class="container">
+      <span class="section__eyebrow" data-reveal>Кейсы</span>
+      <h2 class="section__title" data-reveal>Проекты, которыми <span class="text-gradient">мы гордимся</span></h2>
+      <p class="section__lead" data-reveal>Премиальные проекты KB Agency — с примерами страниц и описанием того, что было сделано.</p>
+    </div>
+
+    <div class="container" data-reveal>
+      <a href="cases.html" class="case-teaser">
+        <img src="img/case4.webp" alt="Тюменский драматический театр — сайт" loading="lazy">
+        <div class="case-teaser__overlay">
+          <span class="case-teaser__tag">Веб-дизайн · Разработка</span>
+          <h3>Тюменский драматический театр</h3>
+          <span class="case-teaser__link">Смотреть кейс →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT / CTA -->
+  <section class="cta" id="contact">
+    <div class="container cta__inner" data-reveal>
+      <h2 class="cta__title">Готовы упаковать <span class="text-gradient">свой проект</span>?</h2>
+      <p class="cta__text">Оставьте заявку — обсудим цели, задачи и подготовим предложение.</p>
+      <form class="cta__form" id="ctaForm">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="tel" name="phone" placeholder="Телефон или Telegram" required>
+        <button type="submit" class="btn btn--primary">Отправить заявку</button>
+      </form>
+      <label class="cta__consent">
+        <input type="checkbox" form="ctaForm" required>
+        <span>Согласен с <a href="personal-data.html">обработкой персональных данных</a></span>
+      </label>
+      <p class="cta__note" id="ctaNote"></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#top" class="logo">KB<span class="logo__dot">.</span>Agency</a>
+      <p>Агентство цифровой упаковки бизнеса. Создаём сайты, воронки и системы продаж, которым доверяют клиенты.</p>
+    </div>
+
+    <div class="footer__col">
+      <span class="footer__heading">Навигация</span>
+      <nav class="footer__nav">
+        <a href="#top">Главная</a>
+        <a href="services.html">Услуги</a>
+        <a href="cases.html">Кейсы</a>
+      </nav>
+    </div>
+
+    <div class="footer__col">
+      <span class="footer__heading">Контакты</span>
+      <nav class="footer__nav">
+        <a href="tel:+79224811172">+7 922 481-11-72</a>
+        <a href="mailto:kb_digital_agency@mail.ru">kb_digital_agency@mail.ru</a>
+        <a href="https://t.me/KB_AGENCY" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://www.instagram.com/kb_digital_agency" target="_blank" rel="noopener">Instagram*</a>
+      </nav>
+    </div>
+
+    <div class="footer__col">
+      <span class="footer__heading">Документы</span>
+      <nav class="footer__nav">
+        <a href="privacy.html">Политика конфиденциальности</a>
+        <a href="personal-data.html">Согласие на обработку данных</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container footer__legal">
+    <small>*Instagram — продукт компании Meta Platforms, Inc., признанной экстремистской организацией и запрещённой на территории Российской Федерации.</small>
+  </div>
+
+  <div class="container footer__bottom">
+    <span>© 2026 KB Agency</span>
+    <a href="#" id="cookieSettingsLink">Настроить Cookie</a>
+  </div>
+</footer>
+
+<!-- Cookie banner -->
+<div class="cookie-banner" id="cookieBanner">
+  <p>На сайте используются файлы cookie для улучшения работы сайта.</p>
+  <div class="cookie-banner__actions">
+    <button class="btn btn--small btn--ghost" id="cookieDecline">Отклонить все</button>
+    <button class="btn btn--small btn--primary" id="cookieAccept">Принять все</button>
+  </div>
+</div>
+
+<script src="js/intro.js"></script>
+<script src="js/tilt.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

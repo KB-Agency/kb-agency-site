@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8c98a"/>
+      <stop offset="100%" stop-color="#c9a35f"/>
+    </linearGradient>
+    <radialGradient id="bg" cx="50%" cy="42%" r="75%">
+      <stop offset="0%" stop-color="#111116"/>
+      <stop offset="100%" stop-color="#08080a"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)"/>
+
+  <circle cx="379" cy="109" r="123" fill="url(#gold)" opacity="0.16" filter="url(#glow)"/>
+  <circle cx="109" cy="427" r="104" fill="#6b5aa8" opacity="0.10" filter="url(#glow)"/>
+
+  <g opacity="0.05" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="128" x2="512" y2="128"/>
+    <line x1="0" y1="256" x2="512" y2="256"/>
+    <line x1="0" y1="384" x2="512" y2="384"/>
+    <line x1="128" y1="0" x2="128" y2="512"/>
+    <line x1="256" y1="0" x2="256" y2="512"/>
+    <line x1="384" y1="0" x2="384" y2="512"/>
+  </g>
+
+  <text x="235.6" y="303.4" text-anchor="middle"
+        font-family="'Unbounded', 'Arial Black', sans-serif" font-weight="700"
+        font-size="208.6" letter-spacing="-4.7" fill="url(#gold)">KB</text>
+
+  <circle cx="376.8" cy="303.4" r="12.3" fill="url(#gold)"/>
+
+  <rect x="161.2" y="337.5" width="189.6" height="2.8" rx="1.4" fill="url(#gold)" opacity="0.55"/>
+</svg>
