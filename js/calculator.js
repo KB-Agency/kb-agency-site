@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const total = selected.reduce((sum, cb) => sum + Number(cb.dataset.price), 0);
     const names = selected.map(cb => cb.dataset.name);
 
-    totalEl.textContent = formatPrice(total);
+    totalEl.textContent = names.length === 0 ? '—' : formatPrice(total);
 
     if (names.length === 0) {
       listEl.textContent = 'Выберите услуги выше, чтобы собрать пакет';
