@@ -194,6 +194,9 @@ ul{ list-style:none; }
   .nav__link:hover::after{ transition-duration:.1s; }
   .nav__link:hover::after{ width:100%; }
 }
+/* touch: instant full underline on tap instead of an animated hover —
+   avoids the "cut off mid-transition" glitch while still giving feedback */
+.nav__link:active::after{ width:100%; transition-duration:0s; }
 
 .header__cta{ display:inline-flex; }
 .burger{ display:none; flex-direction:column; gap:5px; width:28px; z-index:110; }
