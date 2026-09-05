@@ -1,16 +1,17 @@
 /* ============ KB Agency — style.css ============ */
 
 :root{
-  --bg: #08080a;
-  --bg-soft: #0f0f13;
-  --surface: #131318;
-  --surface-2: #1a1a21;
-  --border: rgba(255,255,255,.08);
-  --text: #f5f4f2;
-  --text-dim: #a8a6b3;
+  --bg: #0a0807;
+  --bg-soft: #120f0b;
+  --surface: #171310;
+  --surface-2: #201a14;
+  --border: rgba(232,201,138,.09);
+  --text: #f6f4ef;
+  --text-dim: #aca496;
   --accent: #c9a35f;
   --accent-2: #e8c98a;
-  --accent-soft: rgba(201,163,95,.14);
+  --accent-deep: #8f6a34;
+  --accent-soft: rgba(201,163,95,.16);
   --radius: 20px;
   --container: 1200px;
   --ff-display: 'Unbounded', sans-serif;
@@ -410,7 +411,7 @@ ul{ list-style:none; }
 .timeline{ position:relative; max-width:760px; }
 .timeline__line{
   position:absolute; left:23px; top:8px; bottom:8px; width:1px;
-  background:linear-gradient(var(--border), var(--accent), var(--border));
+  background:linear-gradient(var(--border), var(--accent-deep), var(--accent), var(--accent-deep), var(--border));
 }
 .timeline__item{
   display:flex; gap:28px; padding:26px 0; position:relative;
