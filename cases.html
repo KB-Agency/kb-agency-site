@@ -90,6 +90,9 @@
     <div class="case-study__stage-wrap container" data-reveal>
       <div class="case-study__stage">
         <img class="case-study__image" src="img/case4.webp" alt="Тюменский драматический театр — главная страница" fetchpriority="high">
+        <button class="case-study__expand" type="button" aria-label="Открыть на весь экран">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+        </button>
         <div class="case-study__overlay">
           <span class="case-study__tag">Главная</span>
           <p class="case-study__desc">Главный экран сайта — знакомит с театром и ведёт к афише спектаклей.</p>
@@ -151,6 +154,9 @@
     <div class="case-study__stage-wrap container" data-reveal>
       <div class="case-study__stage">
         <img class="case-study__image" src="img/mrblack1.webp" alt="Mr Black — главная страница" loading="lazy">
+        <button class="case-study__expand" type="button" aria-label="Открыть на весь экран">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+        </button>
         <div class="case-study__overlay">
           <span class="case-study__tag">Главная</span>
           <p class="case-study__desc">Каталог категорий оборудования и подборка популярных товаров.</p>
@@ -212,6 +218,9 @@
     <div class="case-study__stage-wrap container" data-reveal>
       <div class="case-study__stage">
         <img class="case-study__image" src="img/autoprotect1.jpg" alt="Auto Protect — главный экран" loading="lazy">
+        <button class="case-study__expand" type="button" aria-label="Открыть на весь экран">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg>
+        </button>
         <div class="case-study__overlay">
           <span class="case-study__tag">Главная</span>
           <p class="case-study__desc">Главный экран студии — обещание качества и переход к подбору плёнки.</p>
@@ -302,6 +311,16 @@
   </section>
 
 </main>
+
+<div class="lightbox" id="caseLightbox">
+  <div class="lightbox__frame">
+    <button class="lightbox__close" type="button" id="lightboxClose" aria-label="Закрыть">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="M6 6l12 12"/></svg>
+    </button>
+    <img id="lightboxImage" src="" alt="">
+    <p class="lightbox__caption" id="lightboxCaption"></p>
+  </div>
+</div>
 
 <footer class="footer">
   <div class="container footer__inner">

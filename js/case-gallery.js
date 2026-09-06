@@ -4,11 +4,43 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ---------- fullscreen lightbox (shared across all .case-study sections) ----------
+  const lightbox = document.getElementById('caseLightbox');
+  const lightboxImage = document.getElementById('lightboxImage');
+  const lightboxCaption = document.getElementById('lightboxCaption');
+  const lightboxClose = document.getElementById('lightboxClose');
+
+  function openLightbox(src, alt, caption){
+    if (!lightbox || !lightboxImage) return;
+    lightboxImage.src = src;
+    lightboxImage.alt = alt || '';
+    if (lightboxCaption) lightboxCaption.textContent = caption || '';
+    lightbox.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox(){
+    if (!lightbox) return;
+    lightbox.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  if (lightbox){
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  }
+
   document.querySelectorAll('.case-study').forEach((section) => {
     const thumbs = section.querySelectorAll('.case-study__thumb');
     const image = section.querySelector('.case-study__image');
     const tag = section.querySelector('.case-study__tag');
     const desc = section.querySelector('.case-study__desc');
+    const expandBtn = section.querySelector('.case-study__expand');
     if (!thumbs.length || !image) return;
 
     thumbs.forEach((thumb) => {
@@ -28,6 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 180);
       });
     });
+
+    const openCurrent = () => openLightbox(image.src, image.alt, tag ? tag.textContent : '');
+    image.addEventListener('click', openCurrent);
+    if (expandBtn) expandBtn.addEventListener('click', openCurrent);
   });
 
 });
